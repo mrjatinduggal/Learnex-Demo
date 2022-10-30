@@ -1,0 +1,163 @@
+body{
+    padding: 10px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* first  */
+.first-background{
+    background-color: blue;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    color: white;
+}
+.first-outer-grid{
+    background-color:rgb(0, 0, 158) ;
+}
+.first-img{
+    background-image: url(images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    margin: auto;
+    height: 350px;
+    box-shadow: black 0px 0px 10px;
+}
+.first-grid{
+    width: 80%;
+    margin: auto;
+    color: white;
+    background-color: white;
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    "a b c d e";
+    text-align: center;
+}
+.first-inner-grid{
+    padding: 0px 100px;
+}
+.first-grid > h5 {
+    background-color: rgb(0, 0, 158);
+    padding: 20px;
+    margin: 0px;
+
+}
+/* second  */
+.second-section{
+    width: 250px;
+}
+.second-hr{
+    margin-top: 250px;
+    margin-bottom: 0px;
+    border-bottom: 0px;
+}
+.second-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+    min-height: 350px;
+}
+.second-img1{
+    background-image: url(images/2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    margin: auto;
+}
+.second-img2{
+    background-image: url(images/3.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100% ;
+    height: 250px ;
+    margin: auto;
+}
+.second-img3{
+    background-image: url(images/4.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100% ;
+    height: 250px ;
+    margin: auto;
+}
+.second-img4{
+    background-image: url(images/5.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100% ;
+    height: 250px ;
+    margin: auto;
+}
+.second-content>h3{
+    color: darkgray;
+}
+button{
+    background-color: darkgray;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+/* third  */
+.third-hr{
+    margin: 30px 0px 10px 0px;
+}
+.third-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+.third-section-img{
+    background-image: url(images/6.jpg);
+    width: 200px;
+    height: 200px;
+    background-position: bottom;
+    background-size: cover;
+}
+.third-section{
+    width: 300px;
+    align-items: center;
+}
+.third-section-btn{
+    background-color: rgb(0, 0, 158);
+    color: white;
+    border: none;
+    padding: 10px;
+}
+/* fourth  */
+.fourth-footer{
+    background-color: rgb(0, 0, 158);
+    padding: 20px;
+    color: white;
+    margin-top: 20px;
+}
+/* media queries */
+@media screen and (max-width: 600px) {
+    .first-grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "a b c"
+        "d e e";
+    }
+    .second-section{
+        width:100%;
+    }
+    .second-img1, .second-img2, .second-img3, .second-img4{
+        height: 350px;
+    }
+    .third-section{
+        width: 100%;
+    }
+    .second-hr{
+        margin-top: 350px;
+    }
+    
+}
